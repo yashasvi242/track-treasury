@@ -9,12 +9,6 @@ export default function HomeContainer({children, currActiveScreen}){
     const [cookie, setCookie, deleteCookie] = useCookies(["token"]);
 
     return(
-        
-        // <div className="h-full w-full flex bg-[#FFE594]">
-        //  {/* <div className="h-full w-full flex bg-gray-400">   */}
-        // <div className="h-full w-full flex bg-gradient-to-r from-gray-500 to-blue-600">
-
-        // <div className=" h-full w-full flex bg-gradient-to-r from-purple-600 to-blue-600">
         <div className="h-full w-full flex  bg-gradient-to-r from-blue-300 to-blue-600">
  
             {/* left side bar */}
@@ -76,7 +70,7 @@ export default function HomeContainer({children, currActiveScreen}){
                     </div>
 
                     <div className=' h-[15%] text-gray-400 text-sm font-normal text-left pl-5 flex items-end'>
-                        © 2024 Yashasvi Yadav 
+                        © 2024 TrackTreasury™ 
                     </div>
                 </div>
             </div>

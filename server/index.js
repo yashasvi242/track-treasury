@@ -5,7 +5,6 @@ const cors = require("cors"); // npm i cors
 const db = require("./db/db.js");
 const bodyParser = require("body-parser"); // npm i body-parser  // very imp for using req.body
 
-
 const incomeRoutes = require("./routes/income.js");
 const expenseRoutes = require("./routes/expense.js");
 const authRoutes = require("./routes/auth.js");

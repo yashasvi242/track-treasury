@@ -6,41 +6,6 @@ export default function More({}){
     return(
         <HomeContainer currActiveScreen={"more"}>
             
-                    {/* single card's container */}
-                    <div className='w-full h-full space-y-4 overflow-auto px-5 py-6'>
-                
-                        <div className='text-left text-gray-700 '> 
-                            <div className='font-bold text-2xl '>Want to customise this app for your use ?</div>
-                            <div className='font-semibold'>Get the complete source code from github</div>
-                        </div>
-                        <SingleMoreCard
-                            title={'Github'}
-                            linkTitle={'yashasviyadav1/track-treasury'}
-                            link={'https://github.com/yashasviyadav1/track-treasury'}
-                            iconifySrc="uiw:github"
-                            underline
-                        />
-
-                        <div className='text-left text-gray-700 '> 
-                            <div className='font-bold text-2xl '>Want to contact us?</div>
-                            <div className='font-semibold'>We got u covered</div>
-                        </div>
-                        <div className='w-full space-y-3'>
-                            <SingleMoreCard
-                                title={'Mail Us'}
-                                linkTitle={'yashasviyadav2407@gmail.com'}
-                                link={'yashasviyadav2407@gmail.com'}
-                                iconifySrc={'material-symbols:mail'}
-                            />
-                            <SingleMoreCard
-                                title={'Linked In'}
-                                linkTitle={'Profile Link'}
-                                iconifySrc={'mdi:linkedin'}
-                                link={'https://www.linkedin.com/in/yashasviyadav1'}
-                            />
-                            
-                        </div>  
-                    </div>
 
                     
         </HomeContainer>

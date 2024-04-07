@@ -51,48 +51,7 @@ export default function Dashboard({}){
                 </span>
             </div>
 
-            {/* dashboard container */}
-            <div className='h-[90%] dashboard-container w-full space-x-3 '>
-
-                {/* chart & total income etc container (left) */}
-                <div className='h-full w-[70%]'>
-                    <div className='chart-container bg-white px-4 rounded-lg chart-container shadow-xl'>    
-                        <Chart/>
-                    </div>
-                    <div className='pt-3'>
-                        <div className='total-income-expense-balance-container w-full text-gray-700 py-6 space-y-6 bg-white rounded-lg'>
-                            <div className='flex justify-center space-x-7 font-bold text-2xl'>
-                                <div className=''>Total Income : <span className='text-green-700'> ₹ {totalIncomeAmount}</span> </div>
-                                <div className=''>Total Expense :<span className='text-red-700'> ₹ {totalExpenseAmount} </span></div>
-                            </div>
-                            <div className=' font-bold text-3xl'> Total Balance : ₹ {totalIncomeAmount - totalExpenseAmount}</div>
-                        </div>
-                    </div>
-                </div>
-
-
-                {/* recent transactions tab (right) */}
-                <div className='w-[30%] h-full recent-transactions-container rounded-xl pb-6 '>
-
-                    <div className=' h-[5%] w-full font-bold text-gray-600 text-left flex items-center pl-5 space-x-2'>
-                        <Icon icon="mdi:recent" fontSize={22}/>
-                        <div> Transactions history </div> 
-                    </div>
-                    <div className='h-[95%] px-3 w-full h-4/5 overflow-auto space-y-2 pb-3' >
-                        {
-                            combinedData.map((obj) => {
-                                return <RecentTransactionCard 
-                                            title={obj.title} 
-                                            type={obj.type} 
-                                            amount={obj.amount}
-                                        />
-                            })
-                        }
-
-                    </div>
-                </div>  
-            </div>
-           
+    
         </HomeContainer>
     )
 }
